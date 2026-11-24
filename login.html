@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | Athena Leitura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body class="pagina-acesso">
+
+    <main class="acesso">
+
+        <!-- ========== PAINEL LATERAL ESQUERDO ========== -->
+        <aside class="acesso-painel">
+            <a href="index.html" class="acesso-logo">
+                <img src="./assets/athena-logo.png" alt="Logo do Athena Leitura">
+                <span>ATHENA</span>
+            </a>
+
+            <h2>Sua próxima história começa aqui.</h2>
+            <p>Acesse sua conta para continuar sua leitura, rever favoritos e acompanhar seu progresso.</p>
+
+            <ul class="acesso-vantagens">
+                <li><span class="material-symbols-outlined">auto_stories</span> Leitura ilimitada ao seu alcance</li>
+                <li><span class="material-symbols-outlined">devices</span> Acesse de qualquer lugar e continue onde parou</li>
+                <li><span class="material-symbols-outlined">bookmark</span> Favoritos, destaques e progresso salvo</li>
+            </ul>
+        </aside>
+
+        <!-- ========== ÁREA DO FORMULÁRIO (DIREITA) ========== -->
+        <section class="acesso-conteudo">
+            <a href="index.html" class="acesso-voltar">
+                <span class="material-symbols-outlined">arrow_back</span>
+                Voltar ao início
+            </a>
+
+            <div class="acesso-card">
+                <h1>Bem-vindo de volta</h1>
+                <p class="acesso-subtitulo">Acesse sua conta para continuar sua leitura.</p>
+
+                <form class="acesso-form" id="form-login">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Sua senha" required>
+
+                    <div class="acesso-opcoes">
+                        <label class="checkbox">
+                            <input type="checkbox" id="lembrar">
+                            Lembrar de mim
+                        </label>
+                        <a href="#" id="esqueci-senha">Esqueci minha senha</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primario btn-grande">Entrar</button>
+
+                    <p class="acesso-aviso" id="login-aviso"></p>
+                </form>
+
+                <div class="acesso-divisor"><span>ou</span></div>
+
+                <div class="acesso-selo">
+                    <span class="material-symbols-outlined">menu_book</span>
+                    <span>Athena é um sistema exclusivo para leitura.</span>
+                </div>
+
+                <p class="acesso-trocar">
+                    Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

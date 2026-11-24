@@ -1,50 +1,412 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Athena</title>
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena — Leitura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
+    <!-- ===================== HEADER ===================== -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="#inicio" class="logo">
+                <img src="./assets/athena-logo.png" alt="Logo do Athena Leitura">
+                <span class="logo-marca">ATHENA <small>LEITURA</small></span>
+            </a>
 
-<header class="header">
+            <ul class="nav" id="nav">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#funcionalidades">Recursos</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#contato">Contato</a></li>
 
+                <li class="nav-actions">
+                    <a href="login.html" class="btn btn-entrar">Entrar</a>
+                    <a href="cadastro.html" class="btn btn-cadastrar">Cadastrar</a>
+                </li>
+            </ul>
 
-  <div class="header-inner">
-    
-    <button class="hamburguer" id="btn-menu">☰</button>
+            <div class="actions">
+                <a href="login.html" class="btn btn-entrar">Entrar</a>
+                <a href="cadastro.html" class="btn btn-cadastrar">Cadastrar</a>
+            </div>
+
+            <button class="hamburguer" id="btn-menu" aria-label="Abrir menu">☰</button>
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-inner">
+
+                <!-- ========== COLUNA DA ESQUERDA: textos e botões ========== -->
+                <div class="hero-texto">
+                    <span class="hero-etiqueta">Sistema exclusivo para leitura</span>
+
+                    <h1 class="hero-titulo">
+                        Sua próxima história <span>começa aqui.</span>
+                    </h1>
+
+                    <p class="hero-descricao">
+                        Explore clássicos, romances, terror e fantasia em um ambiente
+                        imersivo com favoritos, destaques e progresso salvo.
+                    </p>
+
+                    <div class="hero-botoes">
+                        <a href="cadastro.html" class="btn btn-primario btn-grande">Começar agora</a>
+                        <a href="#funcionalidades" class="btn btn-contorno btn-grande">
+                            <span class="material-symbols-outlined">menu_book</span>
+                            Ver recursos
+                        </a>
+                    </div>
+
+                    <ul class="hero-vantagens">
+                        <li>
+                            <span class="material-symbols-outlined">auto_stories</span>
+                            <p><strong>Leitura ilimitada</strong> Obras ao seu alcance</p>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">devices</span>
+                            <p>Acesse de qualquer lugar</p>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">bookmark</span>
+                            <p>Organize do seu jeito</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ========== COLUNA DA DIREITA: prévia da estante/leitura ========== -->
+                <div class="hero-vitrine">
+                    <img
+                        src="./assets/athena-vitrine.png"
+                        alt="Prévia do Athena Leitura com destaque de O Fantasma da Ópera, categorias e progresso de leitura"
+                        class="hero-imagem"
+                    >
+                    <div class="vitrine-resumo">
+                        <span class="vitrine-tag">EM DESTAQUE • GÓTICA &amp; CLÁSSICOS</span>
+                        <h2>O Fantasma da Ópera</h2>
+                        <p>Gaston Leroux — Uma história sombria, envolta em mistério, paixão e tragédia nas profundezas da Ópera de Paris.</p>
+                        <div class="vitrine-categorias">
+                            <span>Gótica</span>
+                            <span>Clássicos</span>
+                            <span>Mistério</span>
+                            <span>Terror</span>
+                            <span>Romance</span>
+                            <span>Fantasia</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================== SOBRE ===================== -->
+        <section class="secao" id="sobre">
+            <div class="container">
+                <h2 class="secao-titulo">Sobre o Athena</h2>
+
+                <div class="sobre-conteudo">
+
+                    <div class="sobre-texto">
+                        <p>
+                            O <strong>Athena — Leitura</strong> é uma plataforma web e mobile
+                            pensada para tornar a leitura diária mais fluida, organizada e
+                            confortável em telas escuras.
+                        </p>
+                        <p>
+                            Reúna suas leituras em andamento, descubra categorias selecionadas
+                            e retome cada capítulo exatamente de onde parou, seja no
+                            computador ou no celular.
+                        </p>
+                    </div>
+
+                    <ul class="sobre-destaques">
+                        <li>
+                            <div class="beneficio-circulo"><span class="material-symbols-outlined">flag</span></div>
+                            <div>
+                                <h3>Objetivo</h3>
+                                <p>Centralizar livros, categorias e progresso de leitura em uma interface elegante.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beneficio-circulo"><span class="material-symbols-outlined">person</span></div>
+                            <div>
+                                <h3>Para quem</h3>
+                                <p>Leitores que buscam organização, conforto visual e continuidade.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== FUNCIONALIDADES ===================== -->
+        <section class="secao" id="funcionalidades">
+            <div class="container">
+                <h2 class="secao-titulo">Funcionalidades</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <span class="material-symbols-outlined card-icone">menu_book</span>
+                        <h3>Biblioteca Pessoal</h3>
+                        <p>Acesse seus livros salvos, obras em destaque e leituras recentes em um só lugar.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="material-symbols-outlined card-icone">category</span>
+                        <h3>Categorias Curadas</h3>
+                        <p>Navegue por Gótica, Clássicos, Mistério, Terror, Romance, Fantasia e muito mais.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="material-symbols-outlined card-icone">favorite</span>
+                        <h3>Favoritos e Destaques</h3>
+                        <p>Marque obras preferidas e organize trechos e anotações da sua leitura.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="material-symbols-outlined card-icone">history</span>
+                        <h3>Histórico e Progresso</h3>
+                        <p>Acompanhe a porcentagem concluída de cada título e continue de onde parou.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="material-symbols-outlined card-icone">tune</span>
+                        <h3>Perfil e Preferências</h3>
+                        <p>Personalize sua experiência de leitura, notificações e configurações da conta.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== COMO FUNCIONA ===================== -->
+        <section class="secao" id="como-funciona">
+            <div class="container">
+                <h2 class="secao-titulo">Como funciona</h2>
+
+                <div class="passos">
+
+                    <div class="passo">
+                        <div class="passo-circulo">
+                            <span class="passo-numero">1</span>
+                            <span class="material-symbols-outlined">person_add</span>
+                        </div>
+                        <h3>Crie sua Conta</h3>
+                        <p>Cadastre-se gratuitamente para ter seu perfil de leitor.</p>
+                    </div>
+
+                    <span class="seta" aria-hidden="true">→</span>
+
+                    <div class="passo">
+                        <div class="passo-circulo">
+                            <span class="passo-numero">2</span>
+                            <span class="material-symbols-outlined">explore</span>
+                        </div>
+                        <h3>Escolha um Título</h3>
+                        <p>Explore os destaques ou filtre por categorias do seu gosto.</p>
+                    </div>
+
+                    <span class="seta" aria-hidden="true">→</span>
+
+                    <div class="passo">
+                        <div class="passo-circulo">
+                            <span class="passo-numero">3</span>
+                            <span class="material-symbols-outlined">auto_stories</span>
+                        </div>
+                        <h3>Comece a Ler</h3>
+                        <p>Abra a obra e aproveite uma leitura imersiva sem distrações.</p>
+                    </div>
+
+                    <span class="seta" aria-hidden="true">→</span>
+
+                    <div class="passo">
+                        <div class="passo-circulo">
+                            <span class="passo-numero">4</span>
+                            <span class="material-symbols-outlined">bookmark_add</span>
+                        </div>
+                        <h3>Salve Favoritos</h3>
+                        <p>Guarde seus livros prediletos e mantenha seu histórico organizado.</p>
+                    </div>
+
+                    <span class="seta" aria-hidden="true">→</span>
+
+                    <div class="passo">
+                        <div class="passo-circulo">
+                            <span class="passo-numero">5</span>
+                            <span class="material-symbols-outlined">sync</span>
+                        </div>
+                        <h3>Continue Depois</h3>
+                        <p>Retome de onde parou em qualquer tela com seu progresso salvo.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== BENEFÍCIOS ===================== -->
+        <section class="secao" id="beneficios">
+            <div class="container">
+                <h2 class="secao-titulo">Benefícios para você</h2>
+
+                <ul class="beneficios">
+                    <li>
+                        <div class="beneficio-circulo"><span class="material-symbols-outlined">bolt</span></div>
+                        <h3>Mais Fluidez</h3>
+                        <p>Encontre títulos rapidamente e mantenha o ritmo da leitura.</p>
+                    </li>
+                    <li>
+                        <div class="beneficio-circulo"><span class="material-symbols-outlined">dark_mode</span></div>
+                        <h3>Tema Escuro</h3>
+                        <p>Visual escuro com destaque vinho pensado para conforto ocular.</p>
+                    </li>
+                    <li>
+                        <div class="beneficio-circulo"><span class="material-symbols-outlined">psychology</span></div>
+                        <h3>Menos Distrações</h3>
+                        <p>Interface limpa que valoriza o livro, a capa e o progresso.</p>
+                    </li>
+                    <li>
+                        <div class="beneficio-circulo"><span class="material-symbols-outlined">cloud</span></div>
+                        <h3>Tudo em um Só Lugar</h3>
+                        <p>Reúna favoritos, histórico e estante em uma única plataforma.</p>
+                    </li>
+                    <li>
+                        <div class="beneficio-circulo"><span class="material-symbols-outlined">verified_user</span></div>
+                        <h3>Segurança</h3>
+                        <p>Seus dados de acesso e preferências protegidos.</p>
+                    </li>
+                </ul>
+
+                <div class="cta">
+                    <div class="cta-icone"><span class="material-symbols-outlined">auto_stories</span></div>
+
+                    <div class="cta-texto">
+                        <h2>Abra sua próxima leitura hoje</h2>
+                        <p>Crie sua conta gratuita e experimente o Athena — Leitura.</p>
+                    </div>
+
+                    <a href="cadastro.html" class="btn btn-primario btn-grande">Criar conta gratuita</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTATO ===================== -->
+        <section class="secao" id="contato">
+            <div class="container">
+                <h2 class="secao-titulo">Contato</h2>
+
+                <div class="contato-conteudo">
+
+                    <div class="contato-info">
+                        <h3>Fale com a gente</h3>
+                        <p>Tem uma dúvida, sugestão de título ou feedback sobre o Athena? Envie uma mensagem!</p>
+
+                        <ul class="contato-lista">
+                            <li>
+                                <span class="material-symbols-outlined">mail</span>
+                                contato@athenaleitura.com.br
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">call</span>
+                                (11) 99999-9999
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">schedule</span>
+                                Segunda a sexta, das 8h às 18h
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contato-form" id="form-contato">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Seu nome" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+                        <button type="submit" class="btn btn-primario btn-grande">Enviar mensagem</button>
+
+                        <p class="form-aviso" id="form-aviso"></p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER / RODAPÉ ===================== -->
+    <footer class="footer">
+        <div class="container footer-colunas">
+
+            <div class="footer-sobre">
+                <a href="#inicio" class="footer-logo">
+                    <img src="./assets/athena-logo.png" alt="Logo do Athena Leitura">
+                    <span>ATHENA</span>
+                </a>
+                <p>Sistema exclusivo para leitura, organização de estante e acompanhamento de progresso.</p>
+            </div>
+
+            <div>
+                <h3>Navegação</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#funcionalidades">Recursos</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Suporte</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+            </div>
+
+            <address class="footer-contato">
+                <h3>Contato</h3>
+
+                <a href="mailto:contato@athenaleitura.com.br">
+                    <span class="material-symbols-outlined">mail</span>
+                    contato@athenaleitura.com.br
+                </a>
+                <a href="tel:+5511999999999">
+                    <span class="material-symbols-outlined">call</span>
+                    (11) 99999-9999
+                </a>
+
+                <div class="footer-redes">
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Goodreads</a>
+                </div>
+            </address>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© <span id="ano"></span> Athena Leitura. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-
-    <a href="#" class="logo">
-  
-
-      <img class="logo-img" src="./assets/image.png" alt="Logo do Athena">
-      
-
-      
-    </a>
-
-    <ul class="nav" id="nav">
-    <li><a href="#" class="active">Início</a></li>
-      <li><a href="#">Explorar</a></li>
-      <li><a href="#">Gêneros</a></li>
-      <li><a href="#">Minha Biblioteca</a></li>
-      <li><a href="#">Avaliações</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
-
-    <div class="actions">
-   
-
-      <a href="#" class="btn btn-entrar">Entrar</a>
-      <a href="#" class="btn btn-cadastrar">Cadastrar</a>
-    </div>
-
-  </div>
-</header>
-
 </body>
-
+</html>

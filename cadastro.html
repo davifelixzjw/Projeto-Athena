@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta | Athena Leitura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body class="pagina-acesso">
+
+    <main class="acesso">
+
+        <!-- ========== PAINEL LATERAL ESQUERDO ========== -->
+        <aside class="acesso-painel">
+            <a href="index.html" class="acesso-logo">
+                <img src="./assets/athena-logo.png" alt="Logo do Athena Leitura">
+                <span>ATHENA</span>
+            </a>
+
+            <h2>Sua próxima história começa aqui.</h2>
+            <p>Crie sua conta gratuita para montar sua estante, favoritar obras e acompanhar seu progresso.</p>
+
+            <ul class="acesso-vantagens">
+                <li><span class="material-symbols-outlined">auto_stories</span> Leitura ilimitada ao seu alcance</li>
+                <li><span class="material-symbols-outlined">devices</span> Acesse de qualquer lugar e continue onde parou</li>
+                <li><span class="material-symbols-outlined">bookmark</span> Favoritos, destaques e progresso salvo</li>
+            </ul>
+        </aside>
+
+        <!-- ========== ÁREA DO FORMULÁRIO (DIREITA) ========== -->
+        <section class="acesso-conteudo">
+            <a href="index.html" class="acesso-voltar">
+                <span class="material-symbols-outlined">arrow_back</span>
+                Voltar ao início
+            </a>
+
+            <div class="acesso-card">
+                <h1>Criar conta</h1>
+                <p class="acesso-subtitulo">É rápido, gratuito e exclusivo para leitura.</p>
+
+                <form class="acesso-form" id="form-cadastro">
+
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+
+                    <label for="categoria-favorita">Categoria principal</label>
+                    <select id="categoria-favorita" required>
+                        <option value="">Selecione</option>
+                        <option value="gotica">Gótica</option>
+                        <option value="classicos">Clássicos</option>
+                        <option value="misterio">Mistério</option>
+                        <option value="terror">Terror</option>
+                        <option value="romance">Romance</option>
+                        <option value="fantasia">Fantasia</option>
+                    </select>
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Mínimo de 6 caracteres" minlength="6" required>
+
+                    <label for="confirmar-senha">Confirmar senha</label>
+                    <input type="password" id="confirmar-senha" placeholder="Digite a senha de novo" minlength="6" required>
+
+                    <label class="checkbox">
+                        <input type="checkbox" id="termos" required>
+                        Li e aceito os <a href="#">Termos de Uso</a>
+                    </label>
+
+                    <button type="submit" class="btn btn-primario btn-grande">Criar conta</button>
+
+                    <p class="acesso-aviso" id="cadastro-aviso"></p>
+                </form>
+
+                <div class="acesso-divisor"><span>ou</span></div>
+
+                <div class="acesso-selo">
+                    <span class="material-symbols-outlined">menu_book</span>
+                    <span>Athena é um sistema exclusivo para leitura.</span>
+                </div>
+
+                <p class="acesso-trocar">
+                    Já tem conta? <a href="login.html">Entrar</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
